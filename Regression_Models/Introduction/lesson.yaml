@@ -2,7 +2,7 @@
   Course: Regression Models
   Lesson: Introduction
   Author: Swirl Coders
-  Type: Coursera
+  Type: Standard
   Organization: Johns Hopkins Bloomberg School of Public Health
   Version: 2.2.0
 
@@ -77,7 +77,7 @@
   Hint: This one's easy. Type "summary(regrline)"
 
 - Class: mult_question  
-  Output: The slope of the line is the estimate of the coefficient, or muliplier, of "parent", the independent variable of our data (in this case, the parents' heights). From the output of "summary" what is the slope of the regression line?
+  Output: The slope of the line is the estimate of the coefficient, or multiplier, of "parent", the independent variable of our data (in this case, the parents' heights). From the output of "summary" what is the slope of the regression line?
   AnswerChoices: .64629;.04114;23.94153
   CorrectAnswer: .64629
   AnswerTests: omnitest(correctVal= '.64629')
@@ -108,6 +108,13 @@
   Figure: plot5_triangle2.R
   FigureType: add
 
-
 - Class: text
   Output: This concludes our lesson on regression toward the mean. We hope you found it above average!
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on
+    Coursera.org?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: coursera_on_demand()
+  Hint: ""

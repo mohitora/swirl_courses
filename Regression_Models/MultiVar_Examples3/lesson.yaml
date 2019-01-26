@@ -2,7 +2,7 @@
   Course: Regression_Models
   Lesson: MultiVar_Examples3
   Author: Swirl Coders
-  Type: Coursera
+  Type: Standard
   Organization: Johns Hopkins Bloomberg School of Public Health
   Version: 2.2.0
 
@@ -168,7 +168,7 @@
   AnswerChoices: -0.29340; -0.03000; 0.08547; The model doesn't say.
   CorrectAnswer: -0.29340
   AnswerTests: omnitest(correctVal='-0.29340')
-  Hint: The estimaate associated with Year represents the annual change in percent of hungry females.
+  Hint: The estimate associated with Year represents the annual change in percent of hungry females.
 
 - Class: mult_question
   Output: What is the annual change in percentage of hungry males?
@@ -207,3 +207,11 @@
 
 - Class: text
   Output: Congratulations! You've finished this final lesson in multivariable regression models.
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on
+    Coursera.org?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: coursera_on_demand()
+  Hint: ""

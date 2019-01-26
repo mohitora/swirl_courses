@@ -2,7 +2,7 @@
   Course: R Programming
   Lesson: Workspace and Files
   Author: David Kane
-  Type: Coursera
+  Type: Standard
   Organization: Williams College
   Version: 0.1.2
 
@@ -225,25 +225,6 @@
     the trick. If you forgot the recursive argument, the command may have 
     appeared to work, but it didn't create the nested directory."
 
-- Class: text
-  Output:  "To delete a directory you need  to use the recursive = TRUE argument
-    with the function unlink(). If you don't use recursive = TRUE, R is 
-    concerned that you're unaware that you're deleting a directory and all
-    of its contents. R reasons that, if you don't specify that recursive
-    equals TRUE, you don't know that something is in the directory you're trying
-    to delete. R tries to prevent you from making a mistake."
-
-- Class: cmd_question
-  Output: Delete the "testdir2" directory that you created by using unlink().
-  CorrectAnswer: unlink("testdir2", recursive = TRUE)
-  AnswerTests: omnitest(correctExpr='unlink("testdir2", recursive = TRUE)')
-  Hint: unlink("testdir2", recursive = TRUE) works. 
-
-- Class: text
-  Output: Why is this command named "unlink" rather than something more 
-    sensible like "dir.delete" or "dir.remove"? Mainly, history. 
-    unlink is the traditional Unix command for removing directories.
-
 - Class: cmd_question
   Output: Go back to your original working directory using setwd(). (Recall that we 
     created the variable old.dir with the full path for the orginal working 
@@ -260,11 +241,9 @@
     original values at the end. This isn't the same as what we have done 
     here, but it seems similar enough to mention."
 
-- Class: cmd_question
-  Output: "Delete the 'testdir' directory that you just left (and everything in it)"
-  CorrectAnswer: unlink("testdir", recursive = TRUE)
-  AnswerTests: omnitest(correctExpr='unlink("testdir", recursive = TRUE)')
-  Hint: Use unlink("testdir", recursive = TRUE).
+- Class: text
+  Output: "After you finish this lesson delete the 'testdir' directory that 
+    you just left (and everything in it)"
 
 - Class: text
   Output: "Take nothing but results. Leave nothing but assumptions. 
@@ -275,3 +254,12 @@
 - Class: text
   Output: "In this lesson, you learned how to examine your R workspace and 
   work with the file system of your machine from within R. Thanks for playing!"
+
+- Class: mult_question
+  Output: "Would you like to receive credit for completing this course on
+    Coursera.org?"
+  CorrectAnswer: NULL
+  AnswerChoices: Yes;No
+  AnswerTests: coursera_on_demand()
+  Hint: ""
+
